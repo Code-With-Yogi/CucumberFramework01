@@ -24,7 +24,7 @@ public class OfferPageStepDefination {
 		this.testContextSetup = testContextSetup;
 	}
 
-	@Then("user serached for {string} shortname in offers page")
+	@Then("^user serached for (.+) shortname in offers page$")
 	public void user_serached_for_same_shortname_in_offers_page_to_check_if_product_exist(String shortName)
 			throws InterruptedException {
 		switchToOffersPage();
